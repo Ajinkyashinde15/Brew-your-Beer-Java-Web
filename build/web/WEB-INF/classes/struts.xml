@@ -1,0 +1,61 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="sendcontact" class="me.java.app.Contacts">
+            <result name="success">contact.jsp</result>
+            <result name="fail" >contact.jsp</result>
+        </action>
+        <action name="signup" class="me.java.app.SignUp">
+            <result name="success">SignIn.jsp</result>
+            <result name="fail" >SignUp.jsp</result>
+        </action>
+          <action name="login" class="me.java.app.SignIn">
+            <result name="success" type="chain">Profile</result>
+            <result name="fail" >SignIn.jsp</result>
+        </action>
+         <action name="Profile" class="me.java.app.SignIn" method="getProfile">
+            <result name="success">Profile.jsp</result>
+            <result name="fail" >SignIn.jsp</result>
+        </action>
+         <action name="logout" class="me.java.app.SignIn" method="logout">
+            <result name="success">SignIn.jsp</result>
+            <result name="fail" >SignIn.jsp</result>
+        </action>
+         <action name="updateP" class="me.java.app.UpdateP" method="execute">
+            <result name="success" type="chain">Profile</result>
+            <result name="fail" type="chain">Profile</result>
+        </action>
+         <action name="AllCraftBeer" class="me.java.app.CraftBeers" method="getAllCraftBeers">
+            <result name="success">CraftBeer.jsp</result>
+            <result name="fail">Profile</result>
+        </action>
+          <action name="DCraftBeer" class="me.java.app.CraftBeers" method="DCraftBeers">
+            <result name="success" type="chain">AllCraftBeer</result> 
+        </action>
+        <action name="ACraftBeer" class="me.java.app.CraftBeers" method="ACraftBeers">
+            <result name="success" type="chain">AllCraftBeer</result> 
+        </action>
+        <action name="AddToCart" class="me.java.app.CraftBeers" method="AddToCart">
+            <result name="success" type="chain">AllCraftBeer</result> 
+        </action>
+         
+          <action name="rFromCart" class="me.java.app.CraftBeers" method="rFromCart">
+            <result name="success">mycart.jsp</result> 
+        </action>
+           <action name="GoToPayment" class="me.java.app.GoToPayment" method="execute">
+            <result name="success">PaymentInfo.jsp</result> 
+        </action>
+           <action name="makePayment" class="me.java.app.GoToPayment" method="makePayment">
+               <result name="success">myorders.jsp</result> 
+            <result name="fail">PaymentInfo.jsp</result> 
+        </action>
+         <action name="CraftBeers" class="me.java.app.CraftBeers" method="getAllCraftBeers1">
+            <result name="success">CraftBeers.jsp</result>
+             
+        </action>
+    </package>
+</struts>
