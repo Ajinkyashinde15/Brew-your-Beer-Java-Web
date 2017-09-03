@@ -27,4 +27,17 @@ We want the user to be able to:
 GUI
 This section displays the wireframes of various pages of my application. It displays what I intend the interface will look like. It is a rough idea and there is still more to add. 
 
+![Profile Page](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/1.png)
 
+![Make Craft Beer](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/2.png)
+
+![Order Beer](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/3.png)
+
+![Payment Beer 1](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/4.png)
+![Payment Beer 2](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/4.1.png)
+
+![Change Password](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/5.png)
+
+![Show Craft Beer](https://github.com/Ajinkyashinde15/Brew-your-Beer-Java-Web/blob/master/6.png)
+
+      
